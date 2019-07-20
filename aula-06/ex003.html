@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Exercise 03</title>
+
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Olá, Mundo.</h1>
+    <p>Já me livrei da maldição.</p>
+
+
+
+    <script>
+
+       
+        var num1 = window.prompt('Digite um número: '); // Prompt sempre vai receber uma STRING
+        var num2 = Number.parseFloat(prompt('Digite um outro número: ')); // Necessário converter de String pra Number para poder somar. Pode ser convertido já ao receber.
+
+
+        var sum = Number.parseInt(num1) + num2; // Ou pode ser convertido quando for usar.
+
+        window.alert(sum);
+
+    </script>
+</body>
+</html>
