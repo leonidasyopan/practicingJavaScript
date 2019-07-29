@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pratica Pessoal Aula 08</title>
+
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+
+    
+
+
+
+    <script>
+        
+        let nome = window.prompt('Como você se chama?');
+
+        window.alert('Muito prazer ' + nome + '!');
+
+        let jogarOuNao = window.confirm('Podemos jogar um jogo?');
+
+        if ( jogarOuNao == true ) {
+
+            window.alert('Ótimo! Vamos começar.');
+
+            window.alert('Por favor, responda as seguintes perguntas..');
+
+            var nomePai = window.prompt('Qual o nome do seu pai?');
+
+            var nomeMae = window.prompt('E o da sua mãe?');
+
+            let ligacaoMaisForte = window.prompt(`Você é mais ligado ao ${nomePai} ou a ${nomeMae}?`)
+
+            var suaIdade = Number(window.prompt('Quantos anos você tem?'));
+
+            let continuarOuNao = suaIdade >= 18 ? 'Adulto' : 'Criança';
+
+            if (continuarOuNao == 'Adulto' && nomePai) {
+
+                window.alert('Você é um marmanjo filhinho de papai.')
+
+            } else if (continuarOuNao == 'Adulto' && nomeMae) {
+
+                window.alert('Você é um marmanjo filhinho da mamãe.')
+
+            }   else if ( continuarOuNao == 'Criança' && nomePai ) {
+
+                window.alert('Você é um nenezinho filhinho de papai.')
+                
+            } else {
+
+                window.alert('Você é um nenezinho filhinho da mamãe.')
+                
+            }            
+
+        } else {
+            window.alert('Que pena! Quem sabe outro dia então. Até mais.');
+        }
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
