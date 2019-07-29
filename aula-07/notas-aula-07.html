@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes Aula 06</title>
+</head>
+<body>
+    <h2>Famílias de Operadores</h2>
+
+    <ul>
+        <li>Aritméticos</li>
+        <li>Atribuição</li>
+        <li>Relacionais</li>
+        <li>Lógicos</li>
+        <li>Ternários</li>
+    </ul>
+
+    <h3>Aritméticos</h3>
+
+    <ul>
+        <li>+ - Soma</li>
+        <li>- - Subtração</li>
+        <li>* - Multiplicação</li>
+        <li>/ - Divisão</li>
+        <li>% - Resto da divisão</li>
+        <li>** - Potência</li>
+    </ul>
+
+    <h2>Ordem de Precedência dos Operadores</h2>
+
+    <ol>
+        <li> ( ) </li>
+        <li> ** </li>
+        <li> * , / , % </li>
+        <li> + , - </li>
+    </ol>
+
+    <h2>Auto Atribuição</h2>
+
+    <ul>
+        <li>n += x</li>
+        <li>n -= x</li>
+        <li>n *= x</li>
+        <li>n /= x</li>
+        <li>n %= x</li>
+        <li>n **= x</li>
+    </ul>
+
+    <h2>Incremento e Decremento</h2>
+
+    <ul>
+        <li>n++</li>
+        <li>n--</li>
+        <li>++n</li>
+        <li>--n</li>
+    </ul>
+
+    <script>
+
+        window.alert('Vamos fazer algumas contas? Preciso de 2 números inteiros.');
+
+        var num01 = Number(window.prompt('Primeiro número: '));
+
+        var num02 = Number(window.prompt('Segundo número: '));    
+
+        let adicao = num01 + num02;
+
+        let subtracao = num01 - num02;
+
+        let multiplicacao = num01 * num02;
+
+        let divisao = num01 / num02;
+
+        let restoDivisao = num01 % num02;
+
+        let potencia = num01 ** num02;
+
+        document.write("<ul>" + "<li>" + adicao + "</li>" + "<li>" + subtracao + "</li>" + "<li>" + multiplicacao + "</li>" + "<li>" + divisao + "</li>" + "<li>" + restoDivisao + "</li>" + "<li>" + potencia + "</li>" + "</ul>");
+
+    </script>
+    
+</body>
+</html>
