@@ -16,14 +16,14 @@
 
     <p>window > document > html > body</p>
 
-    <p>Os elementos são 'child' e 'parent' um do outro.</p>
+    <p id="especial">Os elementos são 'child' e 'parent' um do outro.</p>
 
     <img src="img/dom-tree.png" alt="DOM tree exemplo">
 
     
     
     <script>
-        var p1 = window.document.getElementsByTagName('p')[0];
+        var p1 = window.document.querySelector('p#especial');
         window.document.write(p1.innerText);
         
 

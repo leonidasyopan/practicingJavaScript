@@ -1,0 +1,20 @@
+body { 
+    background: rgb(68, 125, 199);
+    color: #fff;
+    font: normal 18pt Arial;
+    }
+
+#container {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+div#area {
+    font: normal 20pt Arial;
+    width: 200px;
+    height: 200px;
+    background-color: #20946d;
+    color: #fff;
+    line-height: 200px;
+    text-align: center;
+}

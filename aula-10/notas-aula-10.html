@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes Aula 10</title>
+
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+
+        <h1>Eventos DOM</h1>
+
+        <div id="area" onclick="clicar()">
+            <p>Interaja</p>
+
+        </div>
+
+        
+        
+    </div>
+    <script>
+        var area = window.document.querySelector('div#area');
+
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {            
+            area.innerText = "Clicou!";
+            area.style.background = 'red';
+        }
+
+        function entrar() {            
+            area.innerText = "Entrou!";
+            
+        }
+
+        function sair() {            
+            area.innerText = "Saiu!";
+            area.style.background = '#20946d';
+        }
+
+    </script>
+    
+</body>
+</html>
