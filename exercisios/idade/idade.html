@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Idade</title>
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p>
+                    Ano de nascimento:
+                    <input type="number" name="txtano" id="txtano" min="0">
+                </p>
+                <p>
+                    Sexo:
+                    <input type="radio" name="radsex" id="masculino" checked>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="radsex" id="feminino">
+                    <label for="feminino">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+            </div>
+            <div id="resultado">
+                <p>Preencha os dados acima para ver o resultado!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Leonidas Yopan</p>
+    </footer>
+
+    <script src="js/applications.js"></script>
+</body>
+</html>
